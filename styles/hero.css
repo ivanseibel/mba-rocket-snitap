@@ -1,0 +1,105 @@
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin-inline: auto;
+}
+
+& h1 {
+  max-width: 40rem;;
+}
+
+section.hero h1 div {
+  display: inline-block;
+  overflow: hidden;
+  height: 5rem;
+  width: min-content;
+  vertical-align: bottom;
+}
+
+section.hero h1 span:nth-child(1), 
+section.hero h1 span:nth-child(4) {
+  color: var(--snitap-sky-mid);
+}
+
+section.hero h1 span:nth-child(2) {
+  color: var(--snitap-joy-mid);
+}
+
+section.hero h1 span:nth-child(3) {
+  color: var(--snitap-leaf-mid);
+}
+
+section.hero h1 span {
+  display: inline-block;
+  animation: slide 6s infinite ease-in-out;
+}
+
+@keyframes slide {
+  0%, 20% {
+    transform: translateY(0);
+  }
+
+  /* first bounce */
+  21% {
+    transform: translateY(calc(-5rem - 15px));
+  }
+  23% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+  25% {
+    transform: translateY(calc(-5rem - 5px));
+  }
+  27% {
+    transform: translateY(calc(-5rem + 2px));
+  }
+  29% {
+    transform: translateY(-5rem);
+  }
+
+  30%, 50% {
+    transform: translateY(-5rem);
+  }
+
+  /* second bounce */
+  51% {
+    transform: translateY(calc(-10rem - 15px));
+  }
+  53% {
+    transform: translateY(calc(-10rem + 5px));
+  }
+  55% {
+    transform: translateY(calc(-10rem - 5px));
+  }
+  57% {
+    transform: translateY(calc(-10rem + 2px));
+  }
+  59% {
+    transform: translateY(-10rem);
+  }
+
+  60%, 80% {
+    transform: translateY(-10rem);
+  }
+
+  /* third bounce */
+  81% {
+    transform: translateY(calc(-15rem - 15px));
+  }
+  83% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+  85% {
+    transform: translateY(calc(-15rem - 5px));
+  }
+  87% {
+    transform: translateY(calc(-15rem + 2px));
+  }
+  89% {
+    transform: translateY(-15rem);
+  }
+
+  90%, 100% {
+    transform: translateY(-15rem);
+  }
+}
