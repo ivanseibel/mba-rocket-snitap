@@ -3,36 +3,77 @@ section.hero {
   width: 100%;
   padding: 2.5rem 2rem;
   margin-inline: auto;
-}
 
-& h1 {
-  max-width: 40rem;;
-}
+  & h1 {
+    max-width: 40rem;
+  }
+  
+  & h1 div {
+    display: inline-block;
+    overflow: hidden;
+    height: 5rem;
+    width: min-content;
+    vertical-align: bottom;
+  }
+  
+  & h1 span:nth-child(1), 
+  & h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+  
+  & h1 span:nth-child(2) {
+    color: var(--snitap-joy-mid);
+  }
+  
+  & h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+  
+  & h1 span {
+    display: inline-block;
+    animation: slide 6s infinite ease-in-out;
+  }
+  
+  /* buttons */
+  & .buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
 
-section.hero h1 div {
-  display: inline-block;
-  overflow: hidden;
-  height: 5rem;
-  width: min-content;
-  vertical-align: bottom;
-}
+    & .button {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-radius: 5rem;
+      transition: scale 0.350s;
 
-section.hero h1 span:nth-child(1), 
-section.hero h1 span:nth-child(4) {
-  color: var(--snitap-sky-mid);
-}
+      &.buy {
+        padding: 1.5rem 3rem;
+        background-color: var(--snitap-sun);
+      }
 
-section.hero h1 span:nth-child(2) {
-  color: var(--snitap-joy-mid);
-}
+      &.play span {
+        display: flex;
+        padding: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+      }
 
-section.hero h1 span:nth-child(3) {
-  color: var(--snitap-leaf-mid);
-}
+      &:hover {
+        scale: 1.1;
+      }
+    }
 
-section.hero h1 span {
-  display: inline-block;
-  animation: slide 6s infinite ease-in-out;
+    & .shadow {
+      box-shadow: 
+        0px 36px 15px rgba(0, 0, 0, 0.01), 
+        0px 20px 12px rgba(0, 0, 0, 0.05), 
+        0px 9px 9px rgba(0, 0, 0, 0.09), 
+        0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+  }
 }
 
 @keyframes slide {
