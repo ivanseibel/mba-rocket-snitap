@@ -67,27 +67,6 @@ Check out the live demo of the site [here](https://ivanseibel.github.io/mba-rock
 
 ## Key Concepts and Techniques
 
-### Mobile First Approach
-
-The mobile-first approach ensures that the base styles are optimized for mobile devices. Enhancements for larger screens are added progressively using media queries. This approach prioritizes the mobile user experience and ensures that the site is functional on smaller devices before adding complexity for larger screens.
-
-Example:
-
-```css
-body {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-@media (min-width: 80em) {
-  body {
-    font-size: 1.25rem;
-    line-height: 1.8;
-  }
-}
-
-```
-
 ### Responsive Typography
 
 Responsive typography adjusts the font sizes and line heights based on the screen size. This ensures that text is readable on all devices, providing a better user experience.
