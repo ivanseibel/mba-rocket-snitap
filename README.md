@@ -8,6 +8,12 @@ This project is a study focused on CSS animations and transformations, aiming to
 
 The purpose of this project is to study and implement advanced CSS animation and transformation techniques, applying these concepts in a realistic site that serves as a landing page for a product.
 
+## Figma Design
+
+Below is a screenshot of the design created in Figma that was used as a reference for developing this project:
+
+![assets/layout-desktop.png](assets/layout-desktop.png)
+
 ## Final Product Description
 
 ### Header
@@ -260,9 +266,3 @@ Example:
 }
 
 ```
-
-## Figma Design
-
-Below is a screenshot of the design created in Figma that was used as a reference for developing this project:
-
-![assets/layout-desktop.png](assets/layout-desktop.png)
